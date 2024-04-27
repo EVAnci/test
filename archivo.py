@@ -1,33 +1,33 @@
 class Profesor:
     def __init__(self, el_nombre, el_email):
-        self.nombre = el_nombre
-        self.email = el_email
+        self.__nombre__ = el_nombre
+        self.__email__ = el_email
 
     def dame_tu_nombre(self):
-        return self.nombre
+        return self.__nombre__
 
 
 class Alumno:
     def __init__(self, el_nombre_del_alumno):
-        self.nombre = el_nombre_del_alumno
-        self.inasistencias = 0
-        self.dieta = ""
-        self.mentor = None
+        self.__nombre__ = el_nombre_del_alumno
+        self.__inasistencias__= 0
+        self.__dieta__ = ""
+        self.__mentor__ = None
 
     def mentoria(self, profesor):
-        self.mentor = profesor
+        self.__mentor__ = profesor
 
     def falta(self):
-        self.inasistencias += 1
+        self.__inasistencias__+= 1
 
     def elegir_dieta_especial(self, la_dieta):
-        self.dieta = la_dieta
+        self.__dieta__ = la_dieta
 
     def es_vegano(self):
-        self.dieta = "vegano"
+        self.__dieta__ = "vegano"
 
     def esta_libre(self):
-        if self.inasistencias >= 5:
+        if self.__inasistencias__>= 5:
             return "ESTA LIBRE"
         else:
             return "OK"
