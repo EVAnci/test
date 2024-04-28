@@ -1,4 +1,3 @@
-# comment
 
 class Profesor:
     def __init__(self, el_nombre, el_email):
