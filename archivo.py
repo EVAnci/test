@@ -61,4 +61,4 @@ alumno_juan.mentoria(profe_elio)
 
 print(alumno_juan.mentor)
 
-import ipdb; ipdb.set_trace()
+# import ipdb; ipdb.set_trace()
